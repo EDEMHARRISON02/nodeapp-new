@@ -46,8 +46,8 @@ services:
       - "mongodb"  # Ensure that this service depends on the 'mongodb' service
 
 # Define the custom named volume and network for the containers to persist data and communicate
-#volumes:
-  #mongodb_data:
+volumes:
+  mongodb_data:
 
 networks:
   nodeapp:
