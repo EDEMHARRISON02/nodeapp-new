@@ -26,8 +26,8 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD=password  # Set the MongoDB root password
     networks:
       - nodeapp  # Use the 'nodeapp' for communication
-    #volumes:
-      #- mongodb_data:/data/db
+    volumes:
+      - mongodb_data:/data/db
 
   # Mongo Express service for MongoDB web administration
   mongo-express:
